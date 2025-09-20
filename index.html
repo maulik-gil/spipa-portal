@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Aug 2025 05:24:42 GMT -->
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Multipurpose, super flexible, powerful, clean modern responsive bootstrap 5 admin template"
+        name="description">
+    <meta
+        content="admin template, ki-admin admin template, dashboard template, flat admin template, responsive admin template, web app"
+        name="keywords">
+    <meta content="la-themes" name="author">
+    <link href="../assets/images/logo/favicon.png" rel="icon" type="image/x-icon">
+    <link href="../assets/images/logo/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <title>Ecommerce Dashboard | ki-admin - Premium Admin Template</title>
+
+    <!-- Animation css -->
+    <link href="../assets/vendor/animation/animate.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com/" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap"
+        rel="stylesheet">
+
+    <!--flag Icon css-->
+    <link href="../assets/vendor/flag-icons-master/flag-icon.css" rel="stylesheet" type="text/css">
+
+    <!-- tabler icons-->
+    <link href="../assets/vendor/tabler-icons/tabler-icons.css" rel="stylesheet" type="text/css">
+
+    <!-- apexcharts css-->
+    <link href="../assets/vendor/apexcharts/apexcharts.css" rel="stylesheet" type="text/css">
+
+    <!-- glight css -->
+    <link href="../assets/vendor/glightbox/glightbox.min.css" rel="stylesheet">
+
+    <!-- Bootstrap css-->
+    <link href="../assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- simplebar css-->
+    <link href="../assets/vendor/simplebar/simplebar.css" rel="stylesheet" type="text/css">
+
+    <!-- App css-->
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Responsive css-->
+    <link href="../assets/css/responsive.css" rel="stylesheet" type="text/css">
+
+    <!-- Data Table css-->
+    <link href="../assets/vendor/datatable/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/vendor/datatable/datatable2/buttons.dataTables.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <div class="app-wrapper">
+
+        <div class="loader-wrapper">
+            <div class="loader_24"></div>
+        </div>
+
+        <!-- Menu Navigation starts -->
+        <nav>
+            <div class="app-logo">
+                <a class="logo d-inline-flex align-justify-center" href="index.html">
+                    <!-- <img alt="#" src="../assets/images/logo/1.png"> -->
+                    <h5 style="color: rgb(15, 98, 106);">SPIPA - Portal</h5>
+                </a>
+
+                <!-- <span class="bg-light-primary toggle-semi-nav d-flex-center">
+                    <i class="ti ti-chevron-right"></i>
+                </span> -->
+
+                <div class="d-flex align-items-center nav-profile">
+
+
+                </div>
+            </div>
+            <div class="app-nav" id="app-simple-bar">
+                <ul class="main-nav p-0 mt-2">
+                    
+                    <li>
+                        <a aria-expanded="false" data-bs-toggle="collapse" href="#dashboard">
+                            <svg stroke="currentColor" stroke-width="1.5">
+                                <use
+                                    xlink:href="https://phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/assets/svg/_sprite.svg#home">
+                                </use>
+                            </svg>
+                            dashboard
+                            <span class="badge bg-danger  badge-dashboard badge-notification ms-2">New</span>
+                        </a>
+                        <ul class="collapse" id="dashboard">
+                            <li><a href="index.html">Dashboard</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a aria-expanded="false" data-bs-toggle="collapse" href="#admin_master">
+                            <svg stroke-width="1.5">
+                                <use
+                                    xlink:href="https://phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/assets/svg/_sprite.svg#home">
+                                </use>
+                            </svg>
+                            Admin Master
+                        </a>
+                        <ul class="collapse" id="admin_master">
+                            <li><a href="#">User Master</a></li>
+                            <li><a href="#">Admin Menu</a></li>
+                            <li><a href="#">Menu Rights</a></li>
+                            <li><a href="#">Resource Master</a></li>
+                            <li><a href="#">Role Master</a></li>
+                            <li><a href="#">Domain Master</a></li>
+                            <li><a href="#">Utility Master</a></li>
+                            <li><a href="#">CouchDB Setting</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a aria-expanded="false" data-bs-toggle="collapse" href="#ui-kits">
+                            <svg stroke="currentColor" stroke-width="1.5">
+                                <use
+                                    xlink:href="https://phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/assets/svg/_sprite.svg#briefcase">
+                                </use>
+                            </svg>
+                            CMS Master
+                        </a>
+                        <ul class="collapse" id="ui-kits">
+                            <li class="active"><a href="CMSMenuResource.html">CMS Menu Resource</a></li>
+                            <li><a href="CMSTemplate.html">CMS Template Master</a></li>
+                            <li><a href="CMSMenu.html">CMS Menu Master</a></li>
+                            <li><a href="BannerMaster.html">Banner Master</a></li>
+                            <li><a href="PopupMaster.html">Popup Master</a></li>
+                            <li><a href="NewsMaster.html">News Master</a></li>
+                            <li><a href="GoiLogoMaster.html">GOI Logo upload</a></li>
+                            <li><a href="DocumentMaster.html">Upload Document</a></li>
+                            <li><a href="EcitizenMaster.html">Sub Menu Mapping/Upload</a></li>
+                            <li><a href="AnnouncementMaster.html">Announcement Master</a></li>
+                            <li><a href="ProgramMaster.html">Program Master</a></li>
+                            <li><a href="InstituteMaster.html">Institute Master</a></li>
+                            <li><a href="MasterInstituteReg.html">Institute Registration</a></li>
+                            <li><a href="FeeStructureMaster.html">Fee Structure Master</a></li>
+                            <li><a href="YearMaster.html">Year Master</a></li>
+                            <li><a href="FeeStructureUpload.html">Upload Fee Structure</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a aria-expanded="false" data-bs-toggle="collapse" href="#ready_to_use">
+                            <svg stroke="currentColor" stroke-width="1.5">
+                                <use
+                                    xlink:href="https://phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/assets/svg/_sprite.svg#newspaper">
+                                </use>
+                            </svg>
+                            Ready to use
+                        </a>
+                        <ul class="collapse" id="ready_to_use">
+                            <li><a href="ready_to_use_form.html">Ready To Use Form</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-navs">
+                <span class="menu-previous"><i class="ti ti-chevron-left"></i></span>
+                <span class="menu-next"><i class="ti ti-chevron-right"></i></span>
+            </div>
+
+        </nav>
+        <!-- Menu Navigation ends -->
+
+        <div class="app-content">
+            <div class="">
+
+                <!-- Header Section starts -->
+                <header class="header-main">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-8 col-sm-6 d-flex align-items-center header-left p-0">
+                                <span class="header-toggle ">
+                                    <i class="ph ph-squares-four"></i>
+                                </span>
+                            </div>
+
+                            <div class="col-4 col-sm-6 d-flex align-items-center justify-content-end header-right p-0">
+
+                                <ul class="d-flex align-items-center">
+
+                                    <li class="header-dark">
+                                        <div class="sun-logo head-icon bg-light-dark rounded-circle f-s-22 p-2">
+                                            <i class="ph ph-moon-stars"></i>
+                                        </div>
+                                        <div class="moon-logo head-icon bg-light-dark rounded-circle f-s-22 p-2">
+                                            <i class="ph ph-sun-dim"></i>
+                                        </div>
+                                    </li>
+
+                                    <li class="header-notification">
+                                        <a aria-controls="notificationcanvasRight"
+                                            class="d-block head-icon position-relative bg-light-dark rounded-circle f-s-22 p-2"
+                                            data-bs-target="#notificationcanvasRight" data-bs-toggle="offcanvas"
+                                            href="#" role="button">
+                                            <i class="ph ph-bell"></i>
+                                            <span
+                                                class="position-absolute translate-middle p-1 bg-primary border border-light rounded-circle animate__animated animate__fadeIn animate__infinite animate__slower"></span>
+                                        </a>
+                                        <div aria-labelledby="notificationcanvasRightLabel"
+                                            class="offcanvas offcanvas-end header-notification-canvas"
+                                            id="notificationcanvasRight" tabindex="-1">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title" id="notificationcanvasRightLabel">
+                                                    Notification</h5>
+                                                <button aria-label="Close" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    type="button"></button>
+                                            </div>
+                                            <div class="offcanvas-body app-scroll p-0">
+                                                <div class="head-container">
+                                                    <div class="notification-message head-box">
+
+                                                        <div class="message-content-box flex-grow-1 pe-2">
+
+                                                            <a class="f-s-15 text-dark mb-0"
+                                                                href="read_email.html"><span
+                                                                    class="f-w-500 text-dark">Gene Hart</span> wants to
+                                                                edit <span
+                                                                    class="f-w-500 text-dark">Report.doc</span></a>
+                                                            <div>
+                                                                <a class="d-inline-block f-w-500 text-success me-1"
+                                                                    href="#">Approve</a>
+                                                                <a class="d-inline-block f-w-500 text-danger"
+                                                                    href="#">Deny</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-end">
+                                                            <i class="ph ph-trash f-s-18 text-danger close-btn"></i>
+                                                            <div>
+                                                                <span class="badge text-light-primary"> sep 23 </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="notification-message head-box">
+
+                                                        <div class="message-content-box flex-grow-1 pe-2">
+                                                            <a class="f-s-15 text-dark mb-0" href="read_email.html">Hey
+                                                                <span class="f-w-500 text-dark">Emery McKenzie</span>,
+                                                                get ready: Your order from <span
+                                                                    class="f-w-500 text-dark">@Shopper.com</span></a>
+                                                        </div>
+                                                        <div class="text-end">
+                                                            <i class="ph ph-trash f-s-18 text-danger close-btn"></i>
+                                                            <div>
+                                                                <span class="badge text-light-primary"> sep 23 </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="notification-message head-box">
+                                                        <div class="message-content-box flex-grow-1 pe-2">
+                                                            <a class="f-s-15 text-dark mb-0"
+                                                                href="read_email.html"><span
+                                                                    class="f-w-500 text-dark">Simon Young</span> shared
+                                                                a file called <span
+                                                                    class="f-w-500 text-dark">Dropdown.pdf</span></a>
+                                                        </div>
+                                                        <div class="text-end">
+                                                            <i class="ph ph-trash f-s-18 text-danger close-btn"></i>
+                                                            <div>
+                                                                <span class="badge text-light-primary"> 30 min</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="notification-message head-box">
+                                                        <div class="message-content-box flex-grow-1 pe-2">
+                                                            <a class="f-s-15 text-dark mb-0"
+                                                                href="read_email.html"><span
+                                                                    class="f-w-500 text-dark">Becky G. Hayes</span> has
+                                                                added a comment to <span
+                                                                    class="f-w-500 text-dark">Final_Report.pdf</span></a>
+                                                        </div>
+                                                        <div class="text-end">
+                                                            <i class="ph ph-trash f-s-18 text-danger close-btn"></i>
+                                                            <div>
+                                                                <span class="badge text-light-primary"> 45 min</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="notification-message head-box">
+                                                        <div class="message-content-box  flex-grow-1 pe-2">
+                                                            <a class="f-s-15 text-dark mb-0 "
+                                                                href="read_email.html"><span
+                                                                    class="f-w-600 text-dark">@Romaine</span>
+                                                                invited you to a meeting
+                                                            </a>
+                                                            <div>
+                                                                <a class="d-inline-block f-w-500 text-success me-1"
+                                                                    href="#">Join</a>
+                                                                <a class="d-inline-block f-w-500 text-danger"
+                                                                    href="#">Decline</a>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="text-end">
+                                                            <i class="ph ph-trash f-s-18 text-danger close-btn"></i>
+                                                            <div>
+                                                                <span class="badge text-light-primary"> 1 hour ago
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="hidden-massage py-4 px-3">
+                                                        <div>
+                                                            <i
+                                                                class="ph-duotone  ph-bell-ringing f-s-50 text-primary"></i>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-0">Notification Not Found</h6>
+                                                            <p class="text-dark">When you have any notifications added
+                                                                here,will
+                                                                appear here.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- Header Section ends -->
+
+                <!-- Body main section starts -->
+                <main>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="row">
+                                <!-- Product 1 -->
+                                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                    <div
+                                        class="d-flex align-items-center justify-content-between gap-2 p-2 b-1-light rounded">
+
+                                        <!-- Left: image + text -->
+                                        <div class="d-flex align-items-center gap-2 flex-grow-1">
+                                            <div
+                                                class="b-1-light bg-primary-200 p-1 h-40 w-40 d-flex-center b-r-12 flex-shrink-0 overflow-hidden box-list-img">
+                                                <img alt="Headphones" class="img-fluid"
+                                                    src="../assets/images/dashboard/ecommerce-dashboard/product/02.png">
+                                            </div>
+                                            <div class="mg-s-20 flex-grow-1">
+                                                <h6 class="mb-0 text-dark-800 f-w-500 txt-ellipsis-1">Headphones</h6>
+                                                <p class="text-secondary-800 mb-0">AudioTech</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Right: price -->
+                                        <!-- <span class="badge bg-light-primary text-dark">$120</span> -->
+                                    </div>
+                                </div>
+
+                                <!-- Product 2 -->
+                                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                    <div
+                                        class="d-flex align-items-center justify-content-between gap-2 p-2 b-1-light rounded">
+
+                                        <!-- Left: image + text -->
+                                        <div class="d-flex align-items-center gap-2 flex-grow-1">
+                                            <div
+                                                class="b-1-light bg-primary-200 p-1 h-40 w-40 d-flex-center b-r-12 flex-shrink-0 overflow-hidden box-list-img">
+                                                <img alt="Digital Camera" class="img-fluid"
+                                                    src="../assets/images/dashboard/ecommerce-dashboard/product/03.png">
+                                            </div>
+                                            <div class="mg-s-20 flex-grow-1">
+                                                <h6 class="mb-0 text-dark-800 f-w-500 txt-ellipsis-1">Digital Camera
+                                                </h6>
+                                                <p class="text-secondary-800 mb-0">LensPro</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Right: price -->
+                                    </div>
+                                </div>
+
+                                <!-- Product 3 -->
+                                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                    <div
+                                        class="d-flex align-items-center justify-content-between gap-2 p-2 b-1-light rounded">
+
+                                        <!-- Left: image + text -->
+                                        <div class="d-flex align-items-center gap-2 flex-grow-1">
+                                            <div
+                                                class="b-1-light bg-primary-200 p-1 h-40 w-40 d-flex-center b-r-12 flex-shrink-0 overflow-hidden box-list-img">
+                                                <img alt="Smart Watch" class="img-fluid"
+                                                    src="../assets/images/dashboard/ecommerce-dashboard/product/01.png">
+                                            </div>
+                                            <div class="mg-s-20 flex-grow-1">
+                                                <h6 class="mb-0 text-dark-800 f-w-500 txt-ellipsis-1">Smart Watch</h6>
+                                                <p class="text-secondary-800 mb-0">TechWear</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Right: price -->
+                                    </div>
+                                </div>
+                                <!-- Product 3 -->
+                                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                    <div
+                                        class="d-flex align-items-center justify-content-between gap-2 p-2 b-1-light rounded">
+
+                                        <!-- Left: image + text -->
+                                        <div class="d-flex align-items-center gap-2 flex-grow-1">
+                                            <div
+                                                class="b-1-light bg-primary-200 p-1 h-40 w-40 d-flex-center b-r-12 flex-shrink-0 overflow-hidden box-list-img">
+                                                <img alt="Smart Watch" class="img-fluid"
+                                                    src="../assets/images/dashboard/ecommerce-dashboard/product/01.png">
+                                            </div>
+                                            <div class="mg-s-20 flex-grow-1">
+                                                <h6 class="mb-0 text-dark-800 f-w-500 txt-ellipsis-1">Smart Watch</h6>
+                                                <p class="text-secondary-800 mb-0">TechWear</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Right: price -->
+                                    </div>
+                                </div>
+                                <!-- Product 3 -->
+                                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                    <div
+                                        class="d-flex align-items-center justify-content-between gap-2 p-2 b-1-light rounded">
+
+                                        <!-- Left: image + text -->
+                                        <div class="d-flex align-items-center gap-2 flex-grow-1">
+                                            <div
+                                                class="b-1-light bg-primary-200 p-1 h-40 w-40 d-flex-center b-r-12 flex-shrink-0 overflow-hidden box-list-img">
+                                                <img alt="Smart Watch" class="img-fluid"
+                                                    src="../assets/images/dashboard/ecommerce-dashboard/product/01.png">
+                                            </div>
+                                            <div class="mg-s-20 flex-grow-1">
+                                                <h6 class="mb-0 text-dark-800 f-w-500 txt-ellipsis-1">Smart Watch</h6>
+                                                <p class="text-secondary-800 mb-0">TechWear</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Right: price -->
+                                    </div>
+                                </div>
+                                <!-- Product 3 -->
+                                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                    <div
+                                        class="d-flex align-items-center justify-content-between gap-2 p-2 b-1-light rounded">
+
+                                        <!-- Left: image + text -->
+                                        <div class="d-flex align-items-center gap-2 flex-grow-1">
+                                            <div
+                                                class="b-1-light bg-primary-200 p-1 h-40 w-40 d-flex-center b-r-12 flex-shrink-0 overflow-hidden box-list-img">
+                                                <img alt="Smart Watch" class="img-fluid"
+                                                    src="../assets/images/dashboard/ecommerce-dashboard/product/01.png">
+                                            </div>
+                                            <div class="mg-s-20 flex-grow-1">
+                                                <h6 class="mb-0 text-dark-800 f-w-500 txt-ellipsis-1">Smart Watch</h6>
+                                                <p class="text-secondary-800 mb-0">TechWear</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Right: price -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Test Header</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="earningChart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Test Header </h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div id="revenueChart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Ticket Detail</h5>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div class="app-scroll table-responsive app-datatable-default">
+                                            <table class="w-100 display ticket-detail-table" id="exampledatatable4">
+                                                <thead>
+                                                    <tr>
+                                                        <th>AGENT</th>
+                                                        <th>DEPARTMENT</th>
+                                                        <th>ID</th>
+                                                        <th>TITLE</th>
+                                                        <th>ACTIVITY</th>
+                                                        <th>DATE</th>
+                                                        <th>PRIORITY</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            Gavin Cortez
+                                                        </td>
+                                                        <td>Pre-Sales</td>
+                                                        <td class="f-w-500">AR 2044</td>
+                                                        <td>
+                                                            <p>It uses a dictionary of over 200 Latin</p>
+                                                        </td>
+                                                        <td class="text-danger f-w-500">No reply yet</td>
+                                                        <td>1 jan 2024</td>
+                                                        <td>
+                                                            <span class="badge text-outline-warning">Medium</span>
+                                                        </td>
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Martena Mccray
+                                                        </td>
+                                                        <td>Sales</td>
+                                                        <td class="f-w-500">AR 1763</td>
+                                                        <td>
+                                                            <p>It uses a dictionary of over 200 Latin</p>
+                                                        </td>
+                                                        <td class="text-success f-w-500">5 reply</td>
+                                                        <td>8 jan 2024</td>
+                                                        <td>
+                                                            <span class="badge text-outline-danger">lower</span>
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Gavin Joyce
+                                                        </td>
+                                                        <td>Technical</td>
+                                                        <td class="f-w-500">AR 7452</td>
+                                                        <td>
+                                                            <p>It uses a dictionary of over 200 Latin</p>
+                                                        </td>
+                                                        <td class="text-success f-w-500">5 reply</td>
+                                                        <td>14 jan 2024</td>
+                                                        <td>
+                                                            <span class="badge text-outline-success">High</span>
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Gloria Little
+                                                        </td>
+                                                        <td>Sales</td>
+                                                        <td class="f-w-500">AR 1023</td>
+                                                        <td>
+                                                            <p>It uses a dictionary of over 200 Latin</p>
+                                                        </td>
+                                                        <td class="text-success f-w-500">5 reply</td>
+                                                        <td>6 hours ago</td>
+                                                        <td>
+                                                            <span class="badge text-outline-warning">Medium</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col-sm-6 col-lg-4 col-xxl-3">
+                                <ul class="list-box top-brand-list mb-4">
+                                    <li class="b-s-4-primary">
+                                        <h5>Top Brands</h5>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <div
+                                            class="b-1-light bg-primary-200 p-1 h-40 w-40 d-flex-center b-r-12 flex-shrink-0 overflow-hidden box-list-img">
+                                            <img alt="Smart Watch" class="img-fluid"
+                                                src="../assets/images/dashboard/ecommerce-dashboard/product/04.png">
+                                        </div>
+                                        <div class="flex-grow-1 mg-s-20">
+                                            <h6 class="mb-0 f-w-500 text-dark-800 txt-ellipsis-1">Stylique</h6>
+                                            <p class="text-secondary-800 mb-0">Clothing</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="badge bg-light-primary">96.85%</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="d-flex align-items-center">
+                                        <div
+                                            class="b-1-light bg-primary-200 p-1 h-40 w-40 d-flex-center b-r-12 flex-shrink-0 overflow-hidden box-list-img">
+                                            <img alt="Smart Watch" class="img-fluid"
+                                                src="../assets/images/dashboard/ecommerce-dashboard/product/06.png">
+                                        </div>
+                                        <div class="flex-grow-1 mg-s-20">
+                                            <h6 class="mb-0 f-w-500 text-dark-800 txt-ellipsis-1">Techspire</h6>
+                                            <p class="text-secondary-800 mb-0">Electronics</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="badge bg-light-success">89.42%</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="d-flex align-items-center">
+                                        <div
+                                            class="b-1-light bg-primary-200 p-1 h-40 w-40 d-flex-center b-r-12 flex-shrink-0 overflow-hidden box-list-img">
+                                            <img alt="Smart Watch" class="img-fluid"
+                                                src="../assets/images/dashboard/ecommerce-dashboard/product/07.png">
+                                        </div>
+                                        <div class="flex-grow-1 mg-s-20">
+                                            <h6 class="mb-0 f-w-500 text-dark-800 txt-ellipsis-1">TrekVibe</h6>
+                                            <p class="text-secondary-800 mb-0">Bag's</p>
+                                        </div>
+                                        <div class="text-end">
+                                            <span class="badge bg-light-danger">74.30%</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-6 col-lg-4 col-xxl-3">
+                                <div class="card offer-card-box">
+                                    <div class="circle-ribbon circle-left ribbon-danger b-4-white">
+                                        50%
+                                    </div>
+
+                                    <div class="card-body offer-card-body overflow-hidden ">
+                                        <div>
+                                            <div class="my-3">
+                                                <span class="badge text-primary f-s-10 bg-white-500">Clothing</span>
+                                                <span class="badge text-primary f-s-10 bg-white-500">Toys</span>
+                                                <span class="badge text-primary f-s-10 bg-white-500">Accessories</span>
+                                            </div>
+                                            <h5 class="text-white mt-4">Super <span
+                                                    class="text-bg-primary  p-1 f-s-26 f-w-700 ">Kids’</span> Weekend
+                                                <br> <span class="text-danger highlight-word p-1">Sale</span>
+                                            </h5>
+
+                                        </div>
+                                        <div>
+                                            <a href="product.html" target="_blank"
+                                                class="btn btn-white  f-w-500 w-100 my-2">Shop Now</a>
+                                            <a class="f-s-12 f-w-500 text-white text-d-underline" href="#">Minimum
+                                                purchase
+                                                of $30 required. Online & in-store.</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 col-xxl-2 order-3-md">
+                                <div class="card service-trial-card">
+                                    <div class="card-body">
+                                        <h5 class="text-white f-w-600 txt-ellipsis-1"> AI Commerce</h5>
+                                        <p class="text-white mt-2 txt-ellipsis-2">Smarter Shopping, Faster Growth</p>
+                                        <div class=" service-img-box"></div>
+                                        <div class="mt-3">
+                                            <a href="chat.html" target="_blank"
+                                                class="btn btn-primary btn-sm w-100 text-nowrap">Start Free Trial</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6  col-lg-4">
+                                <div class="card">
+                                    <div class="card-body pb-0">
+                                        <div class="mb-2">
+                                            <h4 class="text-primary">98.65% <span class="f-s-14 text-dark">Total
+                                                    sale</span></h4>
+                                        </div>
+
+                                        <div id="revenueChart"></div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- <div class="col-md-8  col-xxl-6">
+                                <div class="card ecommerce-product-box">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <div class="row g-2 h-100">
+                                                    <div class="col-6">
+
+                                                        <a href="../assets/images/dashboard/ecommerce-dashboard/product/product-01.jpg"
+                                                            class="glightbox brand-img-box"
+                                                            data-glightbox="type: image; zoomable: true;">
+                                                            <img src="../assets/images/dashboard/ecommerce-dashboard/product/product-01.jpg"
+                                                                class="w-100" alt="...">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-6 position-relative">
+                                                        <div class="box-ribbon box-right">
+                                                            <div class="ribbonbox ribbon-danger">Latest</div>
+                                                        </div>
+                                                        <a href="../assets/images/dashboard/ecommerce-dashboard/product/product-02.jpg"
+                                                            class="glightbox brand-img-box"
+                                                            data-glightbox="type: image;">
+                                                            <img src="../assets/images/dashboard/ecommerce-dashboard/product/product-02.jpg"
+                                                                class="w-100" alt="...">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="../assets/images/dashboard/ecommerce-dashboard/product/product-03.jpg"
+                                                            class="glightbox brand-img-box"
+                                                            data-glightbox="type: image;">
+                                                            <img src="../assets/images/dashboard/ecommerce-dashboard/product/product-03.jpg"
+                                                                class="w-100" alt="...">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="../assets/images/dashboard/ecommerce-dashboard/product/product-04.jpg"
+                                                            class="glightbox brand-img-box"
+                                                            data-glightbox="type: image;">
+                                                            <img src="../assets/images/dashboard/ecommerce-dashboard/product/product-04.jpg"
+                                                                class="w-100" alt="...">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="../assets/images/dashboard/ecommerce-dashboard/product/product-05.jpg"
+                                                            class="glightbox brand-img-box"
+                                                            data-glightbox="type: image;">
+                                                            <img src="../assets/images/dashboard/ecommerce-dashboard/product/product-05.jpg"
+                                                                class="w-100" alt="...">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <a href="../assets/images/dashboard/ecommerce-dashboard/product/product-06.jpg"
+                                                            class="glightbox brand-img-box"
+                                                            data-glightbox="type: image;">
+                                                            <img src="../assets/images/dashboard/ecommerce-dashboard/product/product-06.jpg"
+                                                                class="w-100 rounded" alt="...">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-7">
+                                                <div class="my-3">
+                                                    <h3 class="text-dark-800 f-w-700 txt-ellipsis-1">$58,902.90 <span
+                                                            class="f-s-16 f-w-500 text-secondary">Last week</span></h3>
+                                                    <div class="custom-progress-container">
+                                                        <div class="progress-bar"></div>
+                                                        <div class="progress-bar"></div>
+                                                        <div class="progress-bar"></div>
+                                                        <div class="progress-bar"></div>
+                                                    </div>
+                                                </div>
+
+                                                <h6>Choose tags</h6>
+                                                <div class="form-selectgroup products-tags-list my-3">
+                                                    <label class="select-items">
+                                                        <input checked class="select-input" type="checkbox">
+                                                        <span class="select-box">
+                                                            <span class="selectitem">○ New Arrivals</span>
+                                                        </span>
+                                                    </label>
+                                                    <label class="select-items">
+                                                        <input class="select-input" type="checkbox">
+                                                        <span class="select-box">
+                                                            <span class="selectitem">○ Best Sellers</span>
+                                                        </span>
+                                                    </label>
+                                                    <label class="select-items">
+                                                        <input checked class="select-input" type="checkbox">
+                                                        <span class="select-box">
+                                                            <span class="selectitem">○ Trending</span>
+                                                        </span>
+                                                    </label>
+                                                    <label class="select-items">
+                                                        <input class="select-input" type="checkbox">
+                                                        <span class="select-box">
+                                                            <span class="selectitem">○ Exclusive</span>
+                                                        </span>
+                                                    </label>
+                                                    <label class="select-items">
+                                                        <input checked class="select-input" type="checkbox">
+                                                        <span class="select-box">
+                                                            <span class="selectitem">○ On Sale</span>
+                                                        </span>
+                                                    </label>
+                                                    <label class="select-items">
+                                                        <input class="select-input" type="checkbox">
+                                                        <span class="select-box">
+                                                            <span class="selectitem">○ Free Shipping</span>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <!-- Body main section ends -->
+
+
+        <!-- tap on top -->
+        <div class="go-top">
+            <span class="progress-value">
+                <i class="ti ti-chevron-up"></i>
+            </span>
+        </div>
+
+        <!-- Footer Section starts-->
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-9 col-12">
+                        <p class="footer-text f-w-600 mb-0">Copyright © 2025 ki-admin. All rights reserved 💖 V1.0.0</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-text text-end">
+                            <a class="f-w-500 text-primary" href="mailto:teqlathemes@gmail.com"> Need Help <i
+                                    class="ti ti-help"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section ends-->
+    </div>
+
+    <!-- modal -->
+
+    <div class="modal" data-bs-backdrop="static" id="welcomeCard" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content welcome-card">
+
+                <div class="modal-body p-0">
+                    <div>
+                        <img alt="img" class=" img-fluid" src="../assets/images/modals/welcome-bg.png">
+                        <div>
+                            <img src="../assets/images/modals/welcome-rocket.png" class="modal-rocket img-fluid"
+                                alt="img">
+                        </div>
+                    </div>
+                    <div class="text-end position-absolute end-0 top-0 p-3">
+                        <i class="ti ti-x fs-5 text-dark f-w-600" data-bs-dismiss="modal"></i>
+                    </div>
+                    <div class="text-center position-relative welcome-card-content z-1 p-3">
+
+                        <h2 class="f-w-600"> Welcome !👋 </h2>
+                        <h6 class="f-s-15 text-dark f-w-500 mx-0 mx-sm-5"> Start Multipurpose, clean modern responsive
+                            bootstrap 5 admin template </h6>
+                        <ul class="modal-features-list">
+                            <li class="btn btn-light-primary flex-fill">Fully Responsive</li>
+                            <li class="btn btn-light-primary flex-fill">Built with bootstrap 5</li>
+                            <li class="btn btn-light-primary flex-fill">scss support</li>
+                            <li class="btn btn-light-primary flex-fill">Light & Dark Mode</li>
+                            <li class="btn btn-light-primary flex-fill">Enjoy Started!</li>
+                        </ul>
+                        <div class="mt-3 mb-4">
+                            <button class="btn btn-primary text-white btn-lg" data-bs-dismiss="modal" type="button">
+                                Get Started <i class="ti ti-chevrons-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+
+    <!--customizer-->
+    <div id="customizer"></div>
+
+    <!-- latest jquery-->
+    <script src="../assets/js/jquery-3.6.3.min.js"></script>
+
+    <!-- latest jquery-->
+    <script src="../assets/vendor/datatable/jquery-3.5.1.js"></script>
+
+    <!-- latest jquery-->
+    <script src="../assets/vendor/datatable/jquery.dataTables.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="../assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Simple bar js-->
+    <script src="../assets/vendor/simplebar/simplebar.js"></script>
+
+    <!-- phosphor js -->
+    <script src="../assets/vendor/phosphor/phosphor.js"></script>
+
+    <!-- Glight js -->
+    <script src="../assets/vendor/glightbox/glightbox.min.js"></script>
+
+    <!-- apexcharts-->
+    <script src="../assets/vendor/apexcharts/apexcharts.min.js"></script>
+
+    <!-- chartjs js -->
+    <script src="../assets/vendor/chartjs/chart.js"></script>
+
+    <!-- Customizer js-->
+    <script src="../assets/js/customizer.js"></script>
+
+    <!-- Ecommerce js-->
+    <script src="../assets/js/ecommerce_dashboard.js"></script>
+
+    <!-- chart js -->
+    <script src="../assets/js/chart.js"></script>
+
+    <!-- App js-->
+    <script src="../assets/js/script.js"></script>
+
+    <!-- data table js-->
+    <script src="../assets/js/ready_to_use_table.js"></script>
+
+</body>
+
+
+<!-- Mirrored from phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Aug 2025 05:25:52 GMT -->
+
+</html>
