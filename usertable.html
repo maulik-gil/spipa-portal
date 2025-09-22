@@ -38,10 +38,14 @@
 
   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+
   <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
 
   <link href="assets/vendor/datatable/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
   <link href="assets/vendor/datatable/datatable2/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+  <!-- cdn of fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -302,12 +306,14 @@
                 <div class="card">
                   <div class="card-header">
                     <h5>CMS Menu Resource</h5>
+                    <div><a href=""></a></div>
                   </div>
                   <div class="card-body p-0">
                     <div class="app-scroll table-responsive app-datatable-default">
                       <table class="w-100 display ticket-detail-table" id="exampledatatable4">
                         <thead>
                           <tr>
+                            <th>#</th>
                             <th>First Name</th>
                             <th>Last Name</th>
                             <th>UserName</th>
@@ -315,10 +321,12 @@
                             <th>Mobile No</th>
                             <th>Role Name</th>
                             <th>Is Active</th>
+                            <th>Actions</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
+                            <td>1</td>
                             <td>Maulik</td>
                             <td>Rupala</td>
                             <td class="f-w-500">Maulik44</td>
@@ -328,6 +336,62 @@
                             <td>Admin</td>
                             <td>
                               <span class="badge text-outline-warning">Active</span>
+                            </td>
+                            <td>
+                              <div class="commonedit">
+                                <div class="edit">
+                                  <a href="#"><i class="ph ph-pencil-simple"></i></a>
+                                </div>
+                                <div class="trash">
+                                  <a href="#"><i class="ph ph-trash"></i></a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Rahul</td>
+                            <td>Sharma</td>
+                            <td class="f-w-500">Rahul9978</td>
+                            <td>rahulsharma8896@gmail.com
+                            </td>
+                            <td>+91-6791770324</td>
+                            <td>User</td>
+                            <td>
+                              <span class="badge text-outline-warning">Active</span>
+                            </td>
+                            <td>
+                              <div class="commonedit">
+                                <div class="edit">
+                                  <a href="#"><i class="ph ph-pencil-simple"></i></a>
+                                </div>
+                                <div class="trash">
+                                  <a href="#"><i class="ph ph-trash"></i></a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Anand</td>
+                            <td>Jaiswal</td>
+                            <td class="f-w-500">Anand3490</td>
+                            <td>Anand678@gmail.com
+                            </td>
+                            <td>+91-9233561116</td>
+                            <td>Admin</td>
+                            <td>
+                              <span class="badge text-outline-warning">Active</span>
+                            </td>
+                            <td>
+                              <div class="commonedit">
+                                <div class="edit">
+                                  <a href="#"><i class="ph ph-pencil-simple"></i></a>
+                                </div>
+                                <div class="trash">
+                                  <a href="#"><i class="ph ph-trash"></i></a>
+                                </div>
+                              </div>
                             </td>
                           </tr>
                         </tbody>
@@ -418,7 +482,4 @@
   <!-- data table js-->
   <script src="assets/js/ready_to_use_table.js"></script>
 </body>
-
-<!-- Mirrored from phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Aug 2025 05:25:52 GMT -->
-
 </html>

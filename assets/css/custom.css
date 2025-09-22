@@ -1,0 +1,25 @@
+.edit a i{
+    background-color: #0f626a;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.trash a i {
+    background-color: #ec0000;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.commonedit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.commonedit .edit {
+    margin-right: 8px;
+}
