@@ -61,11 +61,6 @@
           <!-- <img alt="#" src="assets/images/logo/1.png"> -->
           <h5 style="color: rgb(15, 98, 106)">SPIPA - Portal</h5>
         </a>
-
-        <!-- <span class="bg-light-primary toggle-semi-nav d-flex-center">
-                    <i class="ti ti-chevron-right"></i>
-                </span> -->
-
         <div class="d-flex align-items-center nav-profile"></div>
       </div>
       <div class="app-nav" id="app-simple-bar">
@@ -183,10 +178,10 @@
               <div class="col-12">
                 <div class="card">
                   <div class="card-header d-flex justify-content-between">
-                    <h5>CMS Menu Resource</h5>
+                    <h5>Domain Master</h5>
                     <div>
-                      <button class="btn btn-primary btn-md" data-bs-target="#bd-example-modal-xl" data-bs-toggle="modal" type="button">Add New User</button>
-                  </div>
+                      <button class="btn btn-primary btn-md" data-bs-target="#bd-example-modal-xl" data-bs-toggle="modal" type="button">Add New Domain</button>
+                    </div>
                   </div>
                   <div class="card-body p-0">
                     <div class="app-scroll table-responsive app-datatable-default">
@@ -194,12 +189,9 @@
                         <thead>
                           <tr>
                             <th>#</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>UserName</th>
-                            <th>Email</th>
-                            <th>Mobile No</th>
-                            <th>Role Name</th>
+                            <th>Domain Name</th>
+                            <th>Domain URL</th>
+                            <th>Department Name</th>
                             <th>Is Active</th>
                             <th>Actions</th>
                           </tr>
@@ -207,59 +199,9 @@
                         <tbody>
                           <tr>
                             <td>1</td>
-                            <td>Maulik</td>
-                            <td>Rupala</td>
-                            <td class="f-w-500">Maulik44</td>
-                            <td>Maulik@gmail.com
-                            </td>
-                            <td>+91-6791770324</td>
-                            <td>Admin</td>
-                            <td>
-                              <span class="badge text-outline-warning">Active</span>
-                            </td>
-                            <td>
-                              <div class="commonedit">
-                                <div class="edit commonbtn">
-                                  <a href="#"><i class="ph ph-pencil-simple"></i></a>
-                                </div>
-                                <div class="trash commonbtn">
-                                  <a href="#"><i class="ph ph-trash"></i></a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>Rahul</td>
-                            <td>Sharma</td>
-                            <td class="f-w-500">Rahul9978</td>
-                            <td>rahulsharma8896@gmail.com
-                            </td>
-                            <td>+91-6791770324</td>
-                            <td>User</td>
-                            <td>
-                              <span class="badge text-outline-warning">Active</span>
-                            </td>
-                            <td>
-                              <div class="commonedit">
-                                <div class="edit commonbtn">
-                                  <a href="#"><i class="ph ph-pencil-simple"></i></a>
-                                </div>
-                                <div class="trash commonbtn">
-                                  <a href="#"><i class="ph ph-trash"></i></a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Anand</td>
-                            <td>Jaiswal</td>
-                            <td class="f-w-500">Anand3490</td>
-                            <td>Anand678@gmail.com
-                            </td>
-                            <td>+91-9233561116</td>
-                            <td>Admin</td>
+                            <td>Main</td>
+                            <td>main</td>
+                            <td>SPIPA Department</td>
                             <td>
                               <span class="badge text-outline-warning">Active</span>
                             </td>
@@ -320,36 +262,35 @@
       <div class="modal-dialog app_modal_xl">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">User Form</h5>
+            <h5 class="modal-title">Domain Master Form</h5>
             <button aria-label="Close" class="btn-close m-0 fs-5" data-bs-dismiss="modal" type="button"></button>
           </div>
           <div class="modal-body">
             <div class="row">
               <div class="col-md-12">
-                <label class="form-label" for="FirstName">First Name</label>
-                <input class="form-control" id="firstName" name="firstName" type="text">
+                <label class="form-label" for="domainname">Domain Name</label>
+                <input class="form-control" id="domainname" name="domainName" type="text" placeholder="Enter Domain Name">
               </div>
               <div class="col-md-12 mt-3">
-                <label class="form-label" for="lastName">Last Name</label>
-                <input class="form-control" id="Last Name" name="Last Name" type="text">
+                <label class="form-label" for="domainURL">Domain URL</label>
+                <input class="form-control" id="domainURL" name="domainURL" type="text" placeholder="Domain URL">
               </div>
               <div class="col-md-12 mt-3">
-                <label class="form-label" for="userName">User Name</label>
-                <input class="form-control" id="userName" name="userName" type="text">
+                <label class="form-label" for="Department Name">Department Name</label>
+                <input class="form-control" id="Department Name" name="Department Name" type="text" placeholder="Department Name">
               </div>
               <div class="col-md-12 mt-3">
-                <label class="form-label" for="userPassword">User Password</label>
-                <input class="form-control" id="userPassword" name="userPassword" type="text">
+                <label class="form-label" for="Department Image">Department Image</label>
+                <input type="file" class="form-control" id="department Image">
               </div>
               <div class="col-md-12 mt-3">
-                <label class="form-label" for="email">Email</label>
-                <input class="form-control" id="email" name="email" type="email">
+                <div class="d-flex">
+                  <input class="form-check-input mg-2" id="flexCheck" type="checkbox">
+                  <label class="form-check-label ms-2" for="flexCheck">
+                    Active
+                  </label>
+                </div>
               </div>
-              <div class="col-md-12 mt-3">
-                <label class="form-label" for="mobileno">Mobile No</label>
-                <input class="form-control" id="mobileno" name="mobileno" type="mobileno">
-              </div>
-
             </div>
           </div>
           <div class="modal-footer">

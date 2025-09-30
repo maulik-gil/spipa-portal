@@ -194,12 +194,8 @@
                         <thead>
                           <tr>
                             <th>#</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>UserName</th>
-                            <th>Email</th>
-                            <th>Mobile No</th>
-                            <th>Role Name</th>
+                            <th>Menu Name</th>
+                            <th>Menu URL</th>
                             <th>Is Active</th>
                             <th>Actions</th>
                           </tr>
@@ -207,13 +203,8 @@
                         <tbody>
                           <tr>
                             <td>1</td>
-                            <td>Maulik</td>
-                            <td>Rupala</td>
-                            <td class="f-w-500">Maulik44</td>
-                            <td>Maulik@gmail.com
-                            </td>
-                            <td>+91-6791770324</td>
-                            <td>Admin</td>
+                            <td>Role Master</td>
+                            <td>/Admin/RoleMaster</td>
                             <td>
                               <span class="badge text-outline-warning">Active</span>
                             </td>
@@ -230,36 +221,8 @@
                           </tr>
                           <tr>
                             <td>2</td>
-                            <td>Rahul</td>
-                            <td>Sharma</td>
-                            <td class="f-w-500">Rahul9978</td>
-                            <td>rahulsharma8896@gmail.com
-                            </td>
-                            <td>+91-6791770324</td>
-                            <td>User</td>
-                            <td>
-                              <span class="badge text-outline-warning">Active</span>
-                            </td>
-                            <td>
-                              <div class="commonedit">
-                                <div class="edit commonbtn">
-                                  <a href="#"><i class="ph ph-pencil-simple"></i></a>
-                                </div>
-                                <div class="trash commonbtn">
-                                  <a href="#"><i class="ph ph-trash"></i></a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Anand</td>
-                            <td>Jaiswal</td>
-                            <td class="f-w-500">Anand3490</td>
-                            <td>Anand678@gmail.com
-                            </td>
-                            <td>+91-9233561116</td>
-                            <td>Admin</td>
+                            <td>Menu Rights</td>
+                            <td>/Admin/MenuRights</td>
                             <td>
                               <span class="badge text-outline-warning">Active</span>
                             </td>
@@ -320,36 +283,27 @@
       <div class="modal-dialog app_modal_xl">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">User Form</h5>
+            <h5 class="modal-title">Resource Master Form</h5>
             <button aria-label="Close" class="btn-close m-0 fs-5" data-bs-dismiss="modal" type="button"></button>
           </div>
           <div class="modal-body">
             <div class="row">
               <div class="col-md-12">
-                <label class="form-label" for="FirstName">First Name</label>
-                <input class="form-control" id="firstName" name="firstName" type="text">
+                <label class="form-label" for="menuName">Menu Name</label>
+                <input class="form-control" id="menuName" name="menuName" type="text">
               </div>
               <div class="col-md-12 mt-3">
-                <label class="form-label" for="lastName">Last Name</label>
-                <input class="form-control" id="Last Name" name="Last Name" type="text">
+                <label class="form-label" for="menuURL">Menu URL</label>
+                <input class="form-control" id="menuURL" name="menuURL" type="text">
               </div>
               <div class="col-md-12 mt-3">
-                <label class="form-label" for="userName">User Name</label>
-                <input class="form-control" id="userName" name="userName" type="text">
+                <div class="d-flex">
+                  <input class="form-check-input mg-2" id="flexCheck" type="checkbox">
+                  <label class="form-check-label ms-2" for="flexCheck">
+                    Active
+                  </label>
+                </div>
               </div>
-              <div class="col-md-12 mt-3">
-                <label class="form-label" for="userPassword">User Password</label>
-                <input class="form-control" id="userPassword" name="userPassword" type="text">
-              </div>
-              <div class="col-md-12 mt-3">
-                <label class="form-label" for="email">Email</label>
-                <input class="form-control" id="email" name="email" type="email">
-              </div>
-              <div class="col-md-12 mt-3">
-                <label class="form-label" for="mobileno">Mobile No</label>
-                <input class="form-control" id="mobileno" name="mobileno" type="mobileno">
-              </div>
-
             </div>
           </div>
           <div class="modal-footer">

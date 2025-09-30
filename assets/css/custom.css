@@ -30,3 +30,17 @@
 .app-datatable-default .dataTables_wrapper table tbody td {
     border-right: 1px solid #D1D0D2;
 }
+
+/* modal css */
+
+.modal {
+    --bs-modal-width: 820px;
+}
+
+.modal-header {
+    background-color: #0f626a;
+}
+
+.modal-title {
+    color: #fff;
+}
