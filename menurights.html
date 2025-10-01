@@ -1,298 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="add your content" name="description" />
+    <meta content="add your content" name="keywords" />
+    <meta content="la-themes" name="author" />
+    <link
+      href="assets/images/logo/favicon.png"
+      rel="icon"
+      type="image/x-icon"
+    />
+    <link
+      href="assets/images/logo/favicon.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <title>SPIPA Dashboard</title>
+    <link href="assets/vendor/animation/animate.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/flag-icons-master/flag-icon.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/vendor/tabler-icons/tabler-icons.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/vendor/apexcharts/apexcharts.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/vendor/glightbox/glightbox.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/bootstrap.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/vendor/simplebar/simplebar.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link
+      href="assets/vendor/datatable/jquery.dataTables.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="assets/vendor/datatable/datatable2/buttons.dataTables.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- cdn of fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
-  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="add your content" name="description" />
-  <meta content="add your content" name="keywords" />
-  <meta content="la-themes" name="author" />
-  <link href="assets/images/logo/favicon.png" rel="icon" type="image/x-icon" />
-  <link href="assets/images/logo/favicon.png" rel="shortcut icon" type="image/x-icon" />
-  <title>SPIPA Dashboard</title>
-  <link href="assets/vendor/animation/animate.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/" rel="preconnect" />
-  <link crossorigin href="https://fonts.gstatic.com/" rel="preconnect" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap"
-    rel="stylesheet" />
-  <link href="assets/vendor/flag-icons-master/flag-icon.css" rel="stylesheet" type="text/css" />
-  <link href="assets/vendor/tabler-icons/tabler-icons.css" rel="stylesheet" type="text/css" />
-  <link href="assets/vendor/apexcharts/apexcharts.css" rel="stylesheet" type="text/css" />
-  <link href="assets/vendor/glightbox/glightbox.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="assets/vendor/simplebar/simplebar.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
-  <link href="assets/vendor/datatable/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
-  <link href="assets/vendor/datatable/datatable2/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
-  <!-- cdn of fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-  <div class="app-wrapper">
-    <div class="loader-wrapper">
-      <div class="loader_24"></div>
-    </div>
-    <!-- Menu Navigation starts -->
-    <nav>
-      <div class="app-logo">
-        <a class="logo d-inline-flex align-justify-center" href="index.html">
-          <!-- <img alt="#" src="assets/images/logo/1.png"> -->
-          <h5 style="color: rgb(15, 98, 106)">SPIPA - Portal</h5>
-        </a>
-        <!-- <span class="bg-light-primary toggle-semi-nav d-flex-center">
+  <body>
+    <div class="app-wrapper">
+      <div class="loader-wrapper">
+        <div class="loader_24"></div>
+      </div>
+      <!-- Menu Navigation starts -->
+      <nav>
+        <div class="app-logo">
+          <a class="logo d-inline-flex align-justify-center" href="index.html">
+            <!-- <img alt="#" src="assets/images/logo/1.png"> -->
+            <h5 style="color: rgb(15, 98, 106)">SPIPA - Portal</h5>
+          </a>
+          <!-- <span class="bg-light-primary toggle-semi-nav d-flex-center">
                   <i class="ti ti-chevron-right"></i>
                   </span> -->
-        <div class="d-flex align-items-center nav-profile"></div>
-      </div>
-      <div class="app-nav" id="app-simple-bar">
-        <ul class="main-nav p-0 mt-2">
-          <li>
-            <a aria-expanded="false" data-bs-toggle="collapse" href="#dashboard">
-              <svg stroke="currentColor" stroke-width="1.5">
-                <use
-                  xlink:href="https://phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/assets/svg/_sprite.svg#home">
-                </use>
-              </svg>
-              dashboard
-              <span class="badge bg-danger badge-dashboard badge-notification ms-2">New</span>
-            </a>
-            <ul class="collapse" id="dashboard">
-              <li><a href="index.html">Dashboard</a></li>
-            </ul>
-          </li>
-          <li>
-            <a aria-expanded="false" data-bs-toggle="collapse" href="#ui-kits">
-              <svg stroke="currentColor" stroke-width="1.5">
-                <use
-                  xlink:href="https://phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/assets/svg/_sprite.svg#briefcase">
-                </use>
-              </svg>
-              CMS Master
-            </a>
-            <ul class="collapse" id="ui-kits">
-              <li class="active">
-                <a href="CMSMenuResource.html">CMS Menu Resource</a>
-              </li>
-              <li><a href="CMSTemplate.html">CMS Template Master</a></li>
-              <li><a href="CMSMenu.html">CMS Menu Master</a></li>
-              <li><a href="BannerMaster.html">Banner Master</a></li>
-              <li><a href="PopupMaster.html">Popup Master</a></li>
-              <li><a href="NewsMaster.html">News Master</a></li>
-              <li><a href="GoiLogoMaster.html">GOI Logo upload</a></li>
-              <li><a href="DocumentMaster.html">Upload Document</a></li>
-              <li>
-                <a href="EcitizenMaster.html">Sub Menu Mapping/Upload</a>
-              </li>
-              <li>
-                <a href="AnnouncementMaster.html">Announcement Master</a>
-              </li>
-              <li><a href="ProgramMaster.html">Program Master</a></li>
-              <li><a href="InstituteMaster.html">Institute Master</a></li>
-              <li>
-                <a href="MasterInstituteReg.html">Institute Registration</a>
-              </li>
-              <li>
-                <a href="FeeStructureMaster.html">Fee Structure Master</a>
-              </li>
-              <li><a href="YearMaster.html">Year Master</a></li>
-              <li>
-                <a href="FeeStructureUpload.html">Upload Fee Structure</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a aria-expanded="false" data-bs-toggle="collapse" href="#ready_to_use">
-              <svg stroke="currentColor" stroke-width="1.5">
-                <use
-                  xlink:href="https://phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/assets/svg/_sprite.svg#newspaper">
-                </use>
-              </svg>
-              Ready to use
-            </a>
-            <ul class="collapse" id="ready_to_use">
-              <li><a href="ready_to_use_form.html">Ready To Use Form</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="menu-navs">
-        <span class="menu-previous"><i class="ti ti-chevron-left"></i></span>
-        <span class="menu-next"><i class="ti ti-chevron-right"></i></span>
-      </div>
-    </nav>
-    <!-- Menu Navigation ends -->
-    <div class="app-content">
-      <div class="">
-        <!-- Header Section starts -->
-        <header class="header-main">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-8 col-sm-6 d-flex align-items-center header-left p-0">
-                <span class="header-toggle">
-                  <i class="ph ph-squares-four"></i>
-                </span>
-              </div>
-              <div class="col-4 col-sm-6 d-flex align-items-center justify-content-end header-right p-0">
-                <ul class="d-flex align-items-center">
-                  <li class="header-dark">
-                    <div class="sun-logo head-icon bg-light-dark rounded-circle f-s-22 p-2">
-                      <i class="ph ph-moon-stars"></i>
-                    </div>
-                    <div class="moon-logo head-icon bg-light-dark rounded-circle f-s-22 p-2">
-                      <i class="ph ph-sun-dim"></i>
-                    </div>
-                  </li>
-                </ul>
+          <div class="d-flex align-items-center nav-profile"></div>
+        </div>
+        <div class="app-nav" id="app-simple-bar">
+          <ul class="main-nav p-0 mt-2">
+            <li>
+              <a
+                aria-expanded="false"
+                data-bs-toggle="collapse"
+                href="#dashboard"
+              >
+                <svg stroke="currentColor" stroke-width="1.5">
+                  <use
+                    xlink:href="https://phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/assets/svg/_sprite.svg#home"
+                  ></use>
+                </svg>
+                dashboard
+                <span
+                  class="badge bg-danger badge-dashboard badge-notification ms-2"
+                  >New</span
+                >
+              </a>
+              <ul class="collapse" id="dashboard">
+                <li><a href="index.html">Dashboard</a></li>
+              </ul>
+            </li>
+            <li>
+              <a
+                aria-expanded="false"
+                data-bs-toggle="collapse"
+                href="#admin_master"
+              >
+                <i class="ti ti-user-circle px-2 pb-1 f-s-22"></i>
+                Admin Master
+              </a>
+              <ul class="collapse" id="admin_master">
+                <li><a href="usertable.html">User Master</a></li>
+                <li><a href="adminmenu.html">Admin Menu</a></li>
+                <li><a href="menurights.html">Menu Rights</a></li>
+                <li><a href="resourcemaster.html">Resource Master</a></li>
+                <li><a href="rolemaster.html">Role Master</a></li>
+                <li><a href="domainmaster.html">Domain Master</a></li>
+                <li><a href="utilitymaster.html">Utility Master</a></li>
+                <li><a href="couchdb.html">CouchDB Setting</a></li>
+              </ul>
+            </li>
+            <li>
+              <a
+                aria-expanded="false"
+                data-bs-toggle="collapse"
+                href="#ui-kits"
+              >
+                <svg stroke="currentColor" stroke-width="1.5">
+                  <use
+                    xlink:href="https://phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/assets/svg/_sprite.svg#briefcase"
+                  ></use>
+                </svg>
+                CMS Master
+              </a>
+              <ul class="collapse" id="ui-kits">
+                <li class="active">
+                  <a href="CMSMenuResource.html">CMS Menu Resource</a>
+                </li>
+                <li><a href="CMSTemplate.html">CMS Template Master</a></li>
+                <li><a href="CMSMenu.html">CMS Menu Master</a></li>
+                <li><a href="BannerMaster.html">Banner Master</a></li>
+                <li><a href="PopupMaster.html">Popup Master</a></li>
+                <li><a href="NewsMaster.html">News Master</a></li>
+                <li><a href="GoiLogoMaster.html">GOI Logo upload</a></li>
+                <li><a href="DocumentMaster.html">Upload Document</a></li>
+                <li>
+                  <a href="EcitizenMaster.html">Sub Menu Mapping/Upload</a>
+                </li>
+                <li>
+                  <a href="AnnouncementMaster.html">Announcement Master</a>
+                </li>
+                <li><a href="ProgramMaster.html">Program Master</a></li>
+                <li><a href="InstituteMaster.html">Institute Master</a></li>
+                <li>
+                  <a href="MasterInstituteReg.html">Institute Registration</a>
+                </li>
+                <li>
+                  <a href="FeeStructureMaster.html">Fee Structure Master</a>
+                </li>
+                <li><a href="YearMaster.html">Year Master</a></li>
+                <li>
+                  <a href="FeeStructureUpload.html">Upload Fee Structure</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                aria-expanded="false"
+                data-bs-toggle="collapse"
+                href="#ready_to_use"
+              >
+                <svg stroke="currentColor" stroke-width="1.5">
+                  <use
+                    xlink:href="https://phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/assets/svg/_sprite.svg#newspaper"
+                  ></use>
+                </svg>
+                Ready to use
+              </a>
+              <ul class="collapse" id="ready_to_use">
+                <li><a href="ready_to_use_form.html">Ready To Use Form</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-navs">
+          <span class="menu-previous"><i class="ti ti-chevron-left"></i></span>
+          <span class="menu-next"><i class="ti ti-chevron-right"></i></span>
+        </div>
+      </nav>
+      <!-- Menu Navigation ends -->
+      <div class="app-content">
+        <div class="">
+          <!-- Header Section starts -->
+          <header class="header-main">
+            <div class="container-fluid">
+              <div class="row">
+                <div
+                  class="col-8 col-sm-6 d-flex align-items-center header-left p-0"
+                >
+                  <span class="header-toggle">
+                    <i class="ph ph-squares-four"></i>
+                  </span>
+                </div>
+                <div
+                  class="col-4 col-sm-6 d-flex align-items-center justify-content-end header-right p-0"
+                >
+                  <ul class="d-flex align-items-center">
+                    <li class="header-dark">
+                      <div
+                        class="sun-logo head-icon bg-light-dark rounded-circle f-s-22 p-2"
+                      >
+                        <i class="ph ph-moon-stars"></i>
+                      </div>
+                      <div
+                        class="moon-logo head-icon bg-light-dark rounded-circle f-s-22 p-2"
+                      >
+                        <i class="ph ph-sun-dim"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        </header>
-        <!-- Header Section ends -->
-        <!-- Body main section starts -->
-        <main>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-header d-flex justify-content-between">
-                    <h5>Role Based Menu Master</h5>
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label class="form-label" for="userName">Role</label>
-                        <select class="form-control" id="menuResource" name="menuResource">
-                          <option value="">-- Select Role --</option>
-                          <option value="Admin">Admin</option>
-                        </select>
-                      </div>
-                      <div class="col-md-6">
-                        <label class="form-label" for="userName">Menu Master</label>
-                        <select class="form-control" id="menuResource" name="menuResource">
-                          <option value="">-- Select Menu Master --</option>
-                          <option value="Admin">Admin Master</option>
-                          <option value="Admin">CMS Master</option>
-                          <option value="Admin">Media Gallery</option>
-                          <option value="Admin">Map</option>
-                        </select>
-                      </div>
-                      <div class="col-md-12 mt-3">
-                        <button class="btn btn-primary btn-md" type="button">Bind</button>
+          </header>
+          <!-- Header Section ends -->
+          <!-- Body main section starts -->
+          <main>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                      <h5>Role Based Menu Master</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="form-label" for="userName">Role</label>
+                          <select
+                            class="form-control"
+                            id="menuResource"
+                            name="menuResource"
+                          >
+                            <option value="">-- Select Role --</option>
+                            <option value="Admin">Admin</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label" for="userName"
+                            >Menu Master</label
+                          >
+                          <select
+                            class="form-control"
+                            id="menuResource"
+                            name="menuResource"
+                          >
+                            <option value="">-- Select Menu Master --</option>
+                            <option value="Admin">Admin Master</option>
+                            <option value="Admin">CMS Master</option>
+                            <option value="Admin">Media Gallery</option>
+                            <option value="Admin">Map</option>
+                          </select>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                          <button class="btn btn-primary btn-md" type="button">
+                            Bind
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </main>
-      </div>
-    </div>
-    <!-- Body main section ends -->
-    <!-- tap on top -->
-    <div class="go-top">
-      <span class="progress-value">
-        <i class="ti ti-chevron-up"></i>
-      </span>
-    </div>
-    <!-- Footer Section starts-->
-    <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-9 col-12">
-            <p class="footer-text f-w-600 mb-0">
-              Copyright © 2025 Designed & Developed By GIL
-            </p>
-          </div>
-          <div class="col-md-3">
-            <div class="footer-text text-end">
-              <a class="f-w-500 text-primary" href="mailto:teqlathemes@gmail.com">
-                Need Help <i class="ti ti-help"></i></a>
-            </div>
-          </div>
+          </main>
         </div>
       </div>
-    </footer>
-    <!-- Footer Section ends-->
-  </div>
-  <!-- modal -->
-  <div aria-hidden="true" aria-labelledby="bd-example-modal-xl" class="modal fade" id="bd-example-modal-xl"
-    tabindex="-1">
-    <div class="modal-dialog app_modal_xl">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">User Form</h5>
-          <button aria-label="Close" class="btn-close m-0 fs-5" data-bs-dismiss="modal" type="button"></button>
-        </div>
-        <div class="modal-body">
+      <!-- Body main section ends -->
+      <!-- tap on top -->
+      <div class="go-top">
+        <span class="progress-value">
+          <i class="ti ti-chevron-up"></i>
+        </span>
+      </div>
+      <!-- Footer Section starts-->
+      <footer>
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-md-12">
-              <label class="form-label" for="FirstName">First Name</label>
-              <input class="form-control" id="firstName" name="firstName" type="text">
+            <div class="col-md-9 col-12">
+              <p class="footer-text f-w-600 mb-0">
+                Copyright © 2025 Designed & Developed By GIL
+              </p>
             </div>
-            <div class="col-md-12 mt-3">
-              <label class="form-label" for="lastName">Last Name</label>
-              <input class="form-control" id="Last Name" name="Last Name" type="text">
-            </div>
-            <div class="col-md-12 mt-3">
-              <label class="form-label" for="userName">User Name</label>
-              <input class="form-control" id="userName" name="userName" type="text">
-            </div>
-            <div class="col-md-12 mt-3">
-              <label class="form-label" for="userPassword">User Password</label>
-              <input class="form-control" id="userPassword" name="userPassword" type="text">
-            </div>
-            <div class="col-md-12 mt-3">
-              <label class="form-label" for="email">Email</label>
-              <input class="form-control" id="email" name="email" type="email">
-            </div>
-            <div class="col-md-12 mt-3">
-              <label class="form-label" for="mobileno">Mobile No</label>
-              <input class="form-control" id="mobileno" name="mobileno" type="mobileno">
+            <div class="col-md-3">
+              <div class="footer-text text-end">
+                <a
+                  class="f-w-500 text-primary"
+                  href="mailto:teqlathemes@gmail.com"
+                >
+                  Need Help <i class="ti ti-help"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="modal-footer">
-          <button class="btn btn-light-secondary" data-bs-dismiss="modal" type="button">Close</button>
-          <button class="btn btn-primary" type="button">Save changes</button>
+      </footer>
+      <!-- Footer Section ends-->
+    </div>
+    <!-- modal -->
+    <div
+      aria-hidden="true"
+      aria-labelledby="bd-example-modal-xl"
+      class="modal fade"
+      id="bd-example-modal-xl"
+      tabindex="-1"
+    >
+      <div class="modal-dialog app_modal_xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">User Form</h5>
+            <button
+              aria-label="Close"
+              class="btn-close m-0 fs-5"
+              data-bs-dismiss="modal"
+              type="button"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-12">
+                <label class="form-label" for="FirstName">First Name</label>
+                <input
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                  type="text"
+                />
+              </div>
+              <div class="col-md-12 mt-3">
+                <label class="form-label" for="lastName">Last Name</label>
+                <input
+                  class="form-control"
+                  id="Last Name"
+                  name="Last Name"
+                  type="text"
+                />
+              </div>
+              <div class="col-md-12 mt-3">
+                <label class="form-label" for="userName">User Name</label>
+                <input
+                  class="form-control"
+                  id="userName"
+                  name="userName"
+                  type="text"
+                />
+              </div>
+              <div class="col-md-12 mt-3">
+                <label class="form-label" for="userPassword"
+                  >User Password</label
+                >
+                <input
+                  class="form-control"
+                  id="userPassword"
+                  name="userPassword"
+                  type="text"
+                />
+              </div>
+              <div class="col-md-12 mt-3">
+                <label class="form-label" for="email">Email</label>
+                <input
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  type="email"
+                />
+              </div>
+              <div class="col-md-12 mt-3">
+                <label class="form-label" for="mobileno">Mobile No</label>
+                <input
+                  class="form-control"
+                  id="mobileno"
+                  name="mobileno"
+                  type="mobileno"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-light-secondary"
+              data-bs-dismiss="modal"
+              type="button"
+            >
+              Close
+            </button>
+            <button class="btn btn-primary" type="button">Save changes</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--customizer-->
-  <div id="customizer"></div>
-  <!-- latest jquery-->
-  <script src="assets/js/jquery-3.6.3.min.js"></script>
-  <!-- latest jquery-->
-  <script src="assets/vendor/datatable/jquery-3.5.1.js"></script>
-  <!-- latest jquery-->
-  <script src="assets/vendor/datatable/jquery.dataTables.min.js"></script>
-  <!-- Bootstrap js-->
-  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
-  <!-- Simple bar js-->
-  <script src="assets/vendor/simplebar/simplebar.js"></script>
-  <!-- phosphor js -->
-  <script src="assets/vendor/phosphor/phosphor.js"></script>
-  <!-- Glight js -->
-  <script src="assets/vendor/glightbox/glightbox.min.js"></script>
-  <!-- apexcharts-->
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <!-- chartjs js -->
-  <script src="assets/vendor/chartjs/chart.js"></script>
-  <!-- Customizer js-->
-  <script src="assets/js/customizer.js"></script>
-  <!-- Ecommerce js-->
-  <script src="assets/js/ecommerce_dashboard.js"></script>
-  <!-- chart js -->
-  <script src="assets/js/chart.js"></script>
-  <!-- App js-->
-  <script src="assets/js/script.js"></script>
-  <!-- data table js-->
-  <script src="assets/js/ready_to_use_table.js"></script>
-</body>
-
+    <!--customizer-->
+    <div id="customizer"></div>
+    <!-- latest jquery-->
+    <script src="assets/js/jquery-3.6.3.min.js"></script>
+    <!-- latest jquery-->
+    <script src="assets/vendor/datatable/jquery-3.5.1.js"></script>
+    <!-- latest jquery-->
+    <script src="assets/vendor/datatable/jquery.dataTables.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Simple bar js-->
+    <script src="assets/vendor/simplebar/simplebar.js"></script>
+    <!-- phosphor js -->
+    <script src="assets/vendor/phosphor/phosphor.js"></script>
+    <!-- Glight js -->
+    <script src="assets/vendor/glightbox/glightbox.min.js"></script>
+    <!-- apexcharts-->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <!-- chartjs js -->
+    <script src="assets/vendor/chartjs/chart.js"></script>
+    <!-- Customizer js-->
+    <script src="assets/js/customizer.js"></script>
+    <!-- Ecommerce js-->
+    <script src="assets/js/ecommerce_dashboard.js"></script>
+    <!-- chart js -->
+    <script src="assets/js/chart.js"></script>
+    <!-- App js-->
+    <script src="assets/js/script.js"></script>
+    <!-- data table js-->
+    <script src="assets/js/ready_to_use_table.js"></script>
+  </body>
 </html>

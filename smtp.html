@@ -1,177 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
-  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="add your content" name="description" />
-  <meta content="add your content" name="keywords" />
-  <meta content="la-themes" name="author" />
-  <link href="assets/images/logo/favicon.png" rel="icon" type="image/x-icon" />
-  <link href="assets/images/logo/favicon.png" rel="shortcut icon" type="image/x-icon" />
-  <title>SPIPA Dashboard</title>
-  <link href="assets/vendor/animation/animate.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/" rel="preconnect" />
-  <link crossorigin href="https://fonts.gstatic.com/" rel="preconnect" />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap"
-    rel="stylesheet" />
-  <link href="assets/vendor/flag-icons-master/flag-icon.css" rel="stylesheet" type="text/css" />
-  <link href="assets/vendor/tabler-icons/tabler-icons.css" rel="stylesheet" type="text/css" />
-  <link href="assets/vendor/apexcharts/apexcharts.css" rel="stylesheet" type="text/css" />
-  <link href="assets/vendor/glightbox/glightbox.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="assets/vendor/simplebar/simplebar.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
-  <link href="assets/vendor/datatable/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
-  <link href="assets/vendor/datatable/datatable2/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
-  <!-- cdn of fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="add your content" name="description" />
+    <meta content="add your content" name="keywords" />
+    <meta content="la-themes" name="author" />
+    <link href="assets/images/logo/favicon.png" rel="icon"
+      type="image/x-icon" />
+    <link href="assets/images/logo/favicon.png" rel="shortcut icon"
+      type="image/x-icon" />
+    <title>SPIPA Dashboard</title>
+    <link href="assets/vendor/animation/animate.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap"
+      rel="stylesheet" />
+    <link href="assets/vendor/flag-icons-master/flag-icon.css" rel="stylesheet"
+      type="text/css" />
+    <link href="assets/vendor/tabler-icons/tabler-icons.css" rel="stylesheet"
+      type="text/css" />
+    <link href="assets/vendor/apexcharts/apexcharts.css" rel="stylesheet"
+      type="text/css" />
+    <link href="assets/vendor/glightbox/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/bootstrap.min.css" rel="stylesheet"
+      type="text/css" />
+    <link href="assets/vendor/simplebar/simplebar.css" rel="stylesheet"
+      type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="assets/vendor/datatable/jquery.dataTables.min.css"
+      rel="stylesheet" type="text/css" />
+    <link href="assets/vendor/datatable/datatable2/buttons.dataTables.min.css"
+      rel="stylesheet" type="text/css" />
+    <!-- cdn of fontawesome -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
 
-<body>
-  <div class="app-wrapper">
-    <div class="loader-wrapper">
-      <div class="loader_24"></div>
-    </div>
-    <!-- Menu Navigation starts -->
-    <nav>
-      <div class="app-logo">
-        <a class="logo d-inline-flex align-justify-center" href="index.html">
-          <!-- <img alt="#" src="assets/images/logo/1.png"> -->
-          <h5 style="color: rgb(15, 98, 106)">SPIPA - Portal</h5>
-        </a>
-        <div class="d-flex align-items-center nav-profile"></div>
+  <body>
+    <div class="app-wrapper">
+      <div class="loader-wrapper">
+        <div class="loader_24"></div>
       </div>
-      <div class="app-nav" id="app-simple-bar">
-        <ul class="main-nav p-0 mt-2">
-          <li>
-            <a aria-expanded="false" data-bs-toggle="collapse" href="#dashboard">
-              <svg stroke="currentColor" stroke-width="1.5">
-                <use
-                  xlink:href="https://phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/assets/svg/_sprite.svg#home">
-                </use>
-              </svg>
-              dashboard
-              <span class="badge bg-danger badge-dashboard badge-notification ms-2">New</span>
-            </a>
-            <ul class="collapse" id="dashboard">
-              <li><a href="index.html">Dashboard</a></li>
-            </ul>
-          </li>
-          <li>
-            <a aria-expanded="false" data-bs-toggle="collapse" href="#ui-kits">
-              <svg stroke="currentColor" stroke-width="1.5">
-                <use
-                  xlink:href="https://phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/assets/svg/_sprite.svg#briefcase">
-                </use>
-              </svg>
-              CMS Master
-            </a>
-            <ul class="collapse" id="ui-kits">
-              <li class="active">
-                <a href="CMSMenuResource.html">CMS Menu Resource</a>
-              </li>
-              <li><a href="CMSTemplate.html">CMS Template Master</a></li>
-              <li><a href="CMSMenu.html">CMS Menu Master</a></li>
-              <li><a href="BannerMaster.html">Banner Master</a></li>
-              <li><a href="PopupMaster.html">Popup Master</a></li>
-              <li><a href="NewsMaster.html">News Master</a></li>
-              <li><a href="GoiLogoMaster.html">GOI Logo upload</a></li>
-              <li><a href="DocumentMaster.html">Upload Document</a></li>
-              <li>
-                <a href="EcitizenMaster.html">Sub Menu Mapping/Upload</a>
-              </li>
-              <li>
-                <a href="AnnouncementMaster.html">Announcement Master</a>
-              </li>
-              <li><a href="ProgramMaster.html">Program Master</a></li>
-              <li><a href="InstituteMaster.html">Institute Master</a></li>
-              <li>
-                <a href="MasterInstituteReg.html">Institute Registration</a>
-              </li>
-              <li>
-                <a href="FeeStructureMaster.html">Fee Structure Master</a>
-              </li>
-              <li><a href="YearMaster.html">Year Master</a></li>
-              <li>
-                <a href="FeeStructureUpload.html">Upload Fee Structure</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a aria-expanded="false" data-bs-toggle="collapse" href="#ready_to_use">
-              <svg stroke="currentColor" stroke-width="1.5">
-                <use
-                  xlink:href="https://phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/assets/svg/_sprite.svg#newspaper">
-                </use>
-              </svg>
-              Ready to use
-            </a>
-            <ul class="collapse" id="ready_to_use">
-              <li><a href="ready_to_use_form.html">Ready To Use Form</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="menu-navs">
-        <span class="menu-previous"><i class="ti ti-chevron-left"></i></span>
-        <span class="menu-next"><i class="ti ti-chevron-right"></i></span>
-      </div>
-    </nav>
-    <!-- Menu Navigation ends -->
-    <div class="app-content">
-      <div class="">
-        <!-- Header Section starts -->
-        <header class="header-main">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-8 col-sm-6 d-flex align-items-center header-left p-0">
-                <span class="header-toggle">
-                  <i class="ph ph-squares-four"></i>
-                </span>
-              </div>
-              <div class="col-4 col-sm-6 d-flex align-items-center justify-content-end header-right p-0">
-                <ul class="d-flex align-items-center">
-                  <li class="header-dark">
-                    <div class="sun-logo head-icon bg-light-dark rounded-circle f-s-22 p-2">
-                      <i class="ph ph-moon-stars"></i>
-                    </div>
-                    <div class="moon-logo head-icon bg-light-dark rounded-circle f-s-22 p-2">
-                      <i class="ph ph-sun-dim"></i>
-                    </div>
-                  </li>
-                </ul>
+      <!-- Menu Navigation starts -->
+      <nav>
+        <div class="app-logo">
+          <a class="logo d-inline-flex align-justify-center" href="index.html">
+            <!-- <img alt="#" src="assets/images/logo/1.png"> -->
+            <h5 style="color: rgb(15, 98, 106)">SPIPA - Portal</h5>
+          </a>
+          <div class="d-flex align-items-center nav-profile"></div>
+        </div>
+        <div class="app-nav" id="app-simple-bar">
+          <ul class="main-nav p-0 mt-2">
+            <li>
+              <a aria-expanded="false" data-bs-toggle="collapse"
+                href="#dashboard">
+                <svg stroke="currentColor" stroke-width="1.5">
+                  <use
+                    xlink:href="https://phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/assets/svg/_sprite.svg#home">
+                  </use>
+                </svg>
+                dashboard
+                <span
+                  class="badge bg-danger badge-dashboard badge-notification ms-2">New</span>
+              </a>
+              <ul class="collapse" id="dashboard">
+                <li><a href="index.html">Dashboard</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a aria-expanded="false" data-bs-toggle="collapse"
+                href="#ui-kits">
+                <svg stroke="currentColor" stroke-width="1.5">
+                  <use
+                    xlink:href="https://phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/assets/svg/_sprite.svg#briefcase">
+                  </use>
+                </svg>
+                CMS Master
+              </a>
+              <ul class="collapse" id="ui-kits">
+                <li class="active">
+                  <a href="CMSMenuResource.html">CMS Menu Resource</a>
+                </li>
+                <li><a href="CMSTemplate.html">CMS Template Master</a></li>
+                <li><a href="CMSMenu.html">CMS Menu Master</a></li>
+                <li><a href="BannerMaster.html">Banner Master</a></li>
+                <li><a href="PopupMaster.html">Popup Master</a></li>
+                <li><a href="NewsMaster.html">News Master</a></li>
+                <li><a href="GoiLogoMaster.html">GOI Logo upload</a></li>
+                <li><a href="DocumentMaster.html">Upload Document</a></li>
+                <li>
+                  <a href="EcitizenMaster.html">Sub Menu Mapping/Upload</a>
+                </li>
+                <li>
+                  <a href="AnnouncementMaster.html">Announcement Master</a>
+                </li>
+                <li><a href="ProgramMaster.html">Program Master</a></li>
+                <li><a href="InstituteMaster.html">Institute Master</a></li>
+                <li>
+                  <a href="MasterInstituteReg.html">Institute Registration</a>
+                </li>
+                <li>
+                  <a href="FeeStructureMaster.html">Fee Structure Master</a>
+                </li>
+                <li><a href="YearMaster.html">Year Master</a></li>
+                <li>
+                  <a href="FeeStructureUpload.html">Upload Fee Structure</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a aria-expanded="false" data-bs-toggle="collapse"
+                href="#ready_to_use">
+                <svg stroke="currentColor" stroke-width="1.5">
+                  <use
+                    xlink:href="https://phpstack-1384472-5121645.cloudwaysapps.com/template/html/ki-admin/assets/svg/_sprite.svg#newspaper">
+                  </use>
+                </svg>
+                Ready to use
+              </a>
+              <ul class="collapse" id="ready_to_use">
+                <li><a href="ready_to_use_form.html">Ready To Use Form</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-navs">
+          <span class="menu-previous"><i class="ti ti-chevron-left"></i></span>
+          <span class="menu-next"><i class="ti ti-chevron-right"></i></span>
+        </div>
+      </nav>
+      <!-- Menu Navigation ends -->
+      <div class="app-content">
+        <div class>
+          <!-- Header Section starts -->
+          <header class="header-main">
+            <div class="container-fluid">
+              <div class="row">
+                <div
+                  class="col-8 col-sm-6 d-flex align-items-center header-left p-0">
+                  <span class="header-toggle">
+                    <i class="ph ph-squares-four"></i>
+                  </span>
+                </div>
+                <div
+                  class="col-4 col-sm-6 d-flex align-items-center justify-content-end header-right p-0">
+                  <ul class="d-flex align-items-center">
+                    <li class="header-dark">
+                      <div
+                        class="sun-logo head-icon bg-light-dark rounded-circle f-s-22 p-2">
+                        <i class="ph ph-moon-stars"></i>
+                      </div>
+                      <div
+                        class="moon-logo head-icon bg-light-dark rounded-circle f-s-22 p-2">
+                        <i class="ph ph-sun-dim"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-        </header>
-        <!-- Header Section ends -->
-        <!-- Body main section starts -->
-        <main>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-header d-flex justify-content-between">
-                    <h5>Send Test SMTP E-Mail</h5>
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <label class="form-label" for="Email Id">Email Id</label>
-                        <input class="form-control" id="Email Id" name="Email Id" type="text"
-                          placeholder="Test Sent Email">
+          </header>
+          <!-- Header Section ends -->
+          <!-- Body main section starts -->
+          <main>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                      <h5>Send Test SMTP E-Mail</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <label class="form-label" for="Email Id">Email
+                            Id</label>
+                          <input class="form-control" id="Email Id"
+                            name="Email Id" type="text"
+                            placeholder="Test Sent Email">
+                        </div>
+                        <div class="col-md-12 mt-3">
+                          <div class="d-flex">
+                            <div>
+                              <button class="btn btn-primary">Send
+                                Email</button>
+                            </div>
+                            <div class="px-2">
+                              <button class="btn btn-primary">Clear
+                                Form</button>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      <div class="col-md-12 mt-3">
-                        <div class="d-flex">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                      <h5>Change SMTP</h5>
+                    </div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label class="form-label" for="smtpserver">SMTP
+                            Server</label>
+                          <input class="form-control" id="smtpserver"
+                            name="smtpserver" type="text"
+                            placeholder="SMTP Server">
+                        </div>
+                        <div class="col-md-6">
+                          <label class="form-label" for="testsmtpserver">Test
+                            SMTP Server</label>
+                          <input class="form-control" id="testsmtpserver"
+                            name="testsmtpserver" type="text"
+                            placeholder="smtp.gujarat.gov.in">
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <div class="form-check form-switch d-flex">
+                            <input class="form-check-input" id="basic-switch-1"
+                              type="checkbox">
+                            <label class="form-check-label ms-2"
+                              for="basic-switch-1">SMTP Port Null</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <div class="form-check form-switch d-flex">
+                            <input class="form-check-input" id="basic-switch-1"
+                              type="checkbox">
+                            <label class="form-check-label ms-2"
+                              for="basic-switch-1">Test SMTP Port Null</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <label class="form-label" for="smtpport">SMTP
+                            Port</label>
+                          <input class="form-control" id="smtpport"
+                            name="smtpport" type="SMTP Port"
+                            placeholder="SMTP Port">
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <label class="form-label" for="testsmtpport">Test SMTP
+                            Port</label>
+                          <input class="form-control" id="testsmtpport"
+                            name="testsmtpport" type="text"
+                            placeholder="Test SMTP Port">
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <label class="form-label" for="smtpaccount">SMTP
+                            Account</label>
+                          <input class="form-control" id="smtpaccount"
+                            name="smtpaccount" type="text"
+                            placeholder="SMTP Account">
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <label class="form-label" for="smtpaaccount">Test
+                            SMTPAccount</label>
+                          <input class="form-control" id="smtpaaccount"
+                            name="smtpaaccount" type="text"
+                            placeholder="Test SMTP Account">
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <label class="form-label" for="smtpaaccount">SMTP
+                            Password</label>
+                          <input class="form-control" id="smtpaaccount"
+                            name="smtpaaccount" type="text"
+                            placeholder="SMTP Password">
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <label class="form-label" for="testsmtppassword">Test
+                            SMTP Password</label>
+                          <input class="form-control" id="testsmtppassword"
+                            name="testsmtppassword" type="text"
+                            placeholder="Test SMTP Password">
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <label class="form-label" for="smtpforemail">SMTP From
+                            Email</label>
+                          <input class="form-control" id="smtpforemail"
+                            name="smtpforemail" type="text"
+                            placeholder="SMTP From Email">
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <label class="form-label" for="testsmtpforemail">Test
+                            SMTP From Email</label>
+                          <input class="form-control" id="testsmtpforemail"
+                            name="testsmtpforemail" type="text"
+                            placeholder="Test SMTP From Email">
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <div class="form-check form-switch d-flex">
+                            <input class="form-check-input" id="basic-switch-1"
+                              type="checkbox">
+                            <label class="form-check-label ms-2"
+                              for="basic-switch-1">SMTP Is Secure</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <div class="form-check form-switch d-flex">
+                            <input class="form-check-input" id="basic-switch-1"
+                              type="checkbox">
+                            <label class="form-check-label ms-2"
+                              for="basic-switch-1">Test SMTP Is Secure</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <div class="form-check form-switch d-flex">
+                            <input class="form-check-input" id="basic-switch-1"
+                              type="checkbox">
+                            <label class="form-check-label ms-2"
+                              for="basic-switch-1">SMTP Is Test Null</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mt-3">
+                          <div class="form-check form-switch d-flex">
+                            <input class="form-check-input" id="basic-switch-1"
+                              type="checkbox">
+                            <label class="form-check-label ms-2"
+                              for="basic-switch-1">Test SMTP Is Test
+                              Null</label>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mt-3">
                           <div>
-                            <button class="btn btn-primary">Send Email</button>
-                          </div>
-                          <div class="px-2">
-                            <button class="btn btn-primary">Clear Form</button>
+                            <button class="btn btn-primary">Save
+                              Setting</button>
                           </div>
                         </div>
                       </div>
@@ -179,163 +340,68 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12">
-                <div class="card">
-                  <div class="card-header d-flex justify-content-between">
-                    <h5>Change SMTP</h5>
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <label class="form-label" for="smtpserver">SMTP Server</label>
-                        <input class="form-control" id="smtpserver" name="smtpserver" type="text"
-                          placeholder="SMTP Server">
-                      </div>
-                      <div class="col-md-6">
-                        <label class="form-label" for="testsmtpserver">Test SMTP Server</label>
-                        <input class="form-control" id="testsmtpserver" name="testsmtpserver" type="text"
-                          placeholder="smtp.gujarat.gov.in">
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <div class="form-check form-switch d-flex">
-                          <input class="form-check-input" id="basic-switch-1" type="checkbox">
-                          <label class="form-check-label ms-2" for="basic-switch-1">SMTP Port Null</label>
-                        </div>
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <div class="form-check form-switch d-flex">
-                          <input class="form-check-input" id="basic-switch-1" type="checkbox">
-                          <label class="form-check-label ms-2" for="basic-switch-1">Test SMTP Port Null</label>
-                        </div>
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <label class="form-label" for="smtpport">SMTP Port</label>
-                        <input class="form-control" id="smtpport" name="smtpport" type="SMTP Port" placeholder="SMTP Port">
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <label class="form-label" for="testsmtpport">Test SMTP Port</label>
-                        <input class="form-control" id="testsmtpport" name="testsmtpport" type="text" placeholder="Test SMTP Port">
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <label class="form-label" for="smtpaccount">SMTP Account</label>
-                        <input class="form-control" id="smtpaccount" name="smtpaccount" type="text" placeholder="SMTP Account">
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <label class="form-label" for="smtpaaccount">Test SMTPAccount</label>
-                        <input class="form-control" id="smtpaaccount" name="smtpaaccount" type="text" placeholder="Test SMTP Account">
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <label class="form-label" for="smtpaaccount">SMTP Password</label>
-                        <input class="form-control" id="smtpaaccount" name="smtpaaccount" type="text" placeholder="SMTP Password">
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <label class="form-label" for="testsmtppassword">Test SMTP Password</label>
-                        <input class="form-control" id="testsmtppassword" name="testsmtppassword" type="text" placeholder="Test SMTP Password">
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <label class="form-label" for="smtpforemail">SMTP From Email</label>
-                        <input class="form-control" id="smtpforemail" name="smtpforemail" type="text"
-                          placeholder="SMTP From Email">
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <label class="form-label" for="testsmtpforemail">Test SMTP From Email</label>
-                        <input class="form-control" id="testsmtpforemail" name="testsmtpforemail" type="text" placeholder="Test SMTP From Email">
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <div class="form-check form-switch d-flex">
-                          <input class="form-check-input" id="basic-switch-1" type="checkbox">
-                          <label class="form-check-label ms-2" for="basic-switch-1">SMTP Is Secure</label>
-                        </div>
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <div class="form-check form-switch d-flex">
-                          <input class="form-check-input" id="basic-switch-1" type="checkbox">
-                          <label class="form-check-label ms-2" for="basic-switch-1">Test SMTP Is Secure</label>
-                        </div>
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <div class="form-check form-switch d-flex">
-                          <input class="form-check-input" id="basic-switch-1" type="checkbox">
-                          <label class="form-check-label ms-2" for="basic-switch-1">SMTP Is Test Null</label>
-                        </div>
-                      </div>
-                      <div class="col-md-6 mt-3">
-                        <div class="form-check form-switch d-flex">
-                          <input class="form-check-input" id="basic-switch-1" type="checkbox">
-                          <label class="form-check-label ms-2" for="basic-switch-1">Test SMTP Is Test Null</label>
-                        </div>
-                      </div>
-                      <div class="col-md-12 mt-3">
-                        <div>
-                          <button class="btn btn-primary">Save Setting</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </main>
-      </div>
-    </div>
-    <!-- Body main section ends -->
-    <!-- tap on top -->
-    <div class="go-top">
-      <span class="progress-value">
-        <i class="ti ti-chevron-up"></i>
-      </span>
-    </div>
-    <!-- Footer Section starts-->
-    <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-9 col-12">
-            <p class="footer-text f-w-600 mb-0">
-              Copyright © 2025 Designed & Developed By GIL
-            </p>
-          </div>
-          <div class="col-md-3">
-            <div class="footer-text text-end">
-              <a class="f-w-500 text-primary" href="mailto:teqlathemes@gmail.com">
-                Need Help <i class="ti ti-help"></i></a>
-            </div>
+            </main>
           </div>
         </div>
+        <!-- Body main section ends -->
+        <!-- tap on top -->
+        <div class="go-top">
+          <span class="progress-value">
+            <i class="ti ti-chevron-up"></i>
+          </span>
+        </div>
+        <!-- Footer Section starts-->
+        <footer>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-9 col-12">
+                <p class="footer-text f-w-600 mb-0">
+                  Copyright © 2025 Designed & Developed By GIL
+                </p>
+              </div>
+              <div class="col-md-3">
+                <div class="footer-text text-end">
+                  <a class="f-w-500 text-primary"
+                    href="mailto:teqlathemes@gmail.com">
+                    Need Help <i class="ti ti-help"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Footer Section ends-->
       </div>
-    </footer>
-    <!-- Footer Section ends-->
-  </div>
-  <!-- modal -->
-  <!--customizer-->
-  <div id="customizer"></div>
-  <!-- latest jquery-->
-  <script src="assets/js/jquery-3.6.3.min.js"></script>
-  <!-- latest jquery-->
-  <script src="assets/vendor/datatable/jquery-3.5.1.js"></script>
-  <!-- latest jquery-->
-  <script src="assets/vendor/datatable/jquery.dataTables.min.js"></script>
-  <!-- Bootstrap js-->
-  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
-  <!-- Simple bar js-->
-  <script src="assets/vendor/simplebar/simplebar.js"></script>
-  <!-- phosphor js -->
-  <script src="assets/vendor/phosphor/phosphor.js"></script>
-  <!-- Glight js -->
-  <script src="assets/vendor/glightbox/glightbox.min.js"></script>
-  <!-- apexcharts-->
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <!-- chartjs js -->
-  <script src="assets/vendor/chartjs/chart.js"></script>
-  <!-- Customizer js-->
-  <script src="assets/js/customizer.js"></script>
-  <!-- Ecommerce js-->
-  <script src="assets/js/ecommerce_dashboard.js"></script>
-  <!-- chart js -->
-  <script src="assets/js/chart.js"></script>
-  <!-- App js-->
-  <script src="assets/js/script.js"></script>
-  <!-- data table js-->
-  <script src="assets/js/ready_to_use_table.js"></script>
-</body>
+      <!-- modal -->
+      <!--customizer-->
+      <div id="customizer"></div>
+      <!-- latest jquery-->
+      <script src="assets/js/jquery-3.6.3.min.js"></script>
+      <!-- latest jquery-->
+      <script src="assets/vendor/datatable/jquery-3.5.1.js"></script>
+      <!-- latest jquery-->
+      <script src="assets/vendor/datatable/jquery.dataTables.min.js"></script>
+      <!-- Bootstrap js-->
+      <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+      <!-- Simple bar js-->
+      <script src="assets/vendor/simplebar/simplebar.js"></script>
+      <!-- phosphor js -->
+      <script src="assets/vendor/phosphor/phosphor.js"></script>
+      <!-- Glight js -->
+      <script src="assets/vendor/glightbox/glightbox.min.js"></script>
+      <!-- apexcharts-->
+      <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+      <!-- chartjs js -->
+      <script src="assets/vendor/chartjs/chart.js"></script>
+      <!-- Customizer js-->
+      <script src="assets/js/customizer.js"></script>
+      <!-- Ecommerce js-->
+      <script src="assets/js/ecommerce_dashboard.js"></script>
+      <!-- chart js -->
+      <script src="assets/js/chart.js"></script>
+      <!-- App js-->
+      <script src="assets/js/script.js"></script>
+      <!-- data table js-->
+      <script src="assets/js/ready_to_use_table.js"></script>
+    </body>
 
-</html>
+  </html>
